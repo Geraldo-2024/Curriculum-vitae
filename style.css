@@ -1,0 +1,533 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body { 
+    background-color: rgb(138, 141, 144);
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    justify-self: center; 
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+.curso {
+    font-weight: bold;
+}
+
+.menu {
+    display: grid;
+    position: fixed;
+    width: 90%;
+    background-color:  rgb(161, 172, 192);
+}
+
+.menu_p {
+    display: flex;
+    font-size: 20px;
+    padding-right: 40px;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid;
+}
+
+.menu ul { 
+    display: flex;  
+    list-style-type: none;
+    justify-content: right;
+    border: 2px solid;
+    padding: 6px;
+}
+
+.menu li {
+    margin: 1px;
+    padding: 2px;
+}
+
+.menu a {
+    background-color: rgb(203, 203, 227);
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.menu a:hover {
+    background-color: rgb(115, 115, 222);
+    color: white;
+    border: 4px solid white
+}
+
+.nome {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 25px;
+    background-color: rgb(199, 215, 230);
+}
+
+.dados_pessoais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    background-color: azure;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px;
+    background-color: azure;
+    /*border: 1px solid;*/
+    padding: 10px;
+    justify-self: center;
+    text-indent: 30px;
+}
+
+.about p {
+    /*border: 1px solid;*/
+    margin: 10px;
+    padding: 10px;
+}
+
+.foto {
+    border: 1px solid;
+    padding: 10px;
+    justify-self: center;
+}
+
+.endereco {
+    /*border: 1px solid;*/
+    padding: 10px;
+    margin-right: 50px;
+    justify-self: right;
+}
+.documentos {
+    /*border: 1px solid;*/
+    padding: 10px;
+    justify-self: left;
+    margin-left: 50px;
+}
+
+.school {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 215, 230);
+}
+
+.school .formacoes {
+    justify-items: center;
+    background-color: rgb(161, 172, 192);
+    padding: 30px;
+    
+}
+
+.school .escola_1 {
+    justify-items: left;
+    background-color:  rgb(199, 215, 230);
+    padding-left: 300px;
+    padding-top: 15px;
+    padding-bottom: 10px;  
+}
+
+.school .escola_2 {
+    justify-items: right;
+    background-color: azure;
+    padding-right: 300px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.school .escola_3 {
+    justify-items: left;
+    background-color: rgb(199, 215, 230);
+    padding-left: 300px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.school .escola_4 {
+    justify-items: right;
+    background-color: azure;
+    padding-right: 300px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.certifica {
+    justify-items: center;
+    background-color:  rgb(161, 172, 192);
+    padding: 30px;
+}
+
+.certificado {
+    background-color: rgb(221, 229, 236);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.certificado .div-0 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div0 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div1 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div2 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div3 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div4 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div5 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div6 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div7 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div8 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div9 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div10 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div11 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div12 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div13 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div14 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div15 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div16 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div17 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div18 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div19 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div20 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div21 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div22 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div21 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div22 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div23 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div24 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div25 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div26 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.certificado .div27 {
+    background-color: rgb(199, 215, 230);
+    /*border: 2px solid;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.certificado .div28 {
+    background-color: rgb(161, 172, 192);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.expert .experi {
+    justify-items: center;
+    background-color: rgb(161, 172, 192);
+    padding: 30px;
+}
+
+.expert1{
+    background-color: rgb(199, 215, 230);
+    padding: 10px;
+}
+
+.expert1 ul {
+    padding: 15px;
+}
+
+.expert2{
+    background-color: rgb(161, 172, 192);
+    padding: 10px; 
+}
+
+.expert3{
+    background-color: rgb(199, 215, 230);
+    padding: 10px;
+}    
+
+.expert4{
+    background-color: rgb(161, 172, 192);
+    padding: 10px;
+}
+
+.expert5{
+    background-color: rgb(199, 215, 230);
+    padding: 10px; 
+}
+
+.expert6{
+    background-color: rgb(161, 172, 192);
+    padding: 10px;
+}
+
+.expert6 ul {
+    padding: 15px;
+}
+
+.expert7{
+    background-color: rgb(199, 215, 230);
+    padding: 10px; 
+}
+
+.expert7 ul {
+    padding: 15px;
+}
+
+.expert8{
+    background-color: rgb(161, 172, 192);
+    padding: 10px; 
+}
+
+.expert9{
+    background-color: rgb(199, 215, 230);
+    padding: 10px; 
+}
+
+.expert10{
+    background-color: rgb(161, 172, 192);
+    padding: 10px;
+}
+
+.habilidade .habil {
+    justify-items: ;
+    background-color: rgb(199, 215, 230);
+    padding: 10px;
+    padding-left: 150px;
+}
+
+.habilidade ul {
+    background-color: rgb(161, 172, 192); 
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(199, 215, 230);
+    padding: 30px;
+    padding-left: 200px;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: rgb(209, 26, 26);
+}
+
