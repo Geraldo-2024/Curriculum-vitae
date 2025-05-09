@@ -39,14 +39,14 @@ p {
     padding-right: 40px;
     justify-content: center;
     align-content: center;
-    border: 2px solid;
+    /*border: 2px solid;*/
 }
 
 .menu ul { 
     display: flex;  
     list-style-type: none;
     justify-content: right;
-    border: 2px solid;
+    /*border: 2px solid;*/
     padding: 6px;
 }
 
@@ -87,25 +87,33 @@ p {
 
 .about {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    padding: 10px;
+    grid-template-columns: 1fr 3fr;
     background-color: azure;
-    /*border: 1px solid;*/
     padding: 10px;
-    justify-self: center;
-    text-indent: 30px;
+    padding-right: 250px;
+    justify-self: left;
+    text-indent: 35px;
 }
 
 .about p {
-    /*border: 1px solid;*/
     margin: 10px;
     padding: 10px;
+    padding-right: 0px;
 }
 
 .foto {
+    justify-self: center;
+} 
+
+.foto p {
+    visibility: hidden;
+    font-family: Lucida Sans Unicode;
+}
+
+.img {
+    width: 160px;
     border: 1px solid;
     padding: 10px;
-    justify-self: center;
 }
 
 .endereco {
@@ -117,8 +125,8 @@ p {
 .documentos {
     /*border: 1px solid;*/
     padding: 10px;
-    justify-self: left;
     margin-left: 50px;
+    justify-self: left;
 }
 
 .school {
@@ -330,6 +338,8 @@ p {
     margin: 5px;
 }
 
+
+
 .certificado .div18 {
     background-color: rgb(161, 172, 192);
     border: 2px solid;
@@ -504,7 +514,6 @@ p {
 }
 
 .habilidade .habil {
-    justify-items: ;
     background-color: rgb(199, 215, 230);
     padding: 10px;
     padding-left: 150px;
@@ -531,3 +540,163 @@ footer a:hover {
     color: rgb(209, 26, 26);
 }
 
+
+
+@media screen and (max-width: 768px) {
+
+    .nome {
+        display: none;
+        font-size: 15px;
+    }
+
+    .dados_pessoais {
+        display: block;
+    }
+
+    .foto {
+        justify-items: center;
+    }
+
+    .foto p {
+        visibility: visible;
+        font-size: 20px;
+    }
+
+    .about {
+        padding-right: 0px; 
+    }
+
+    .endereco {
+        justify-self: center;
+        padding-left: 90px;
+        margin-bottom: 10px;
+    }
+
+    .documentos {
+        justify-self: center;
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .school {
+        display: block;
+    }
+
+    .school .escola_1 {
+        justify-items: center; 
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .school .escola_2 {
+        justify-items: center;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .school .escola_3 {
+        justify-items: center;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .school .escola_4 {
+        justify-items: center;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .certificado {
+        display: block; 
+        justify-items: center;   
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .habilidade .habil {
+        justify-items: center;  
+        padding: 0px;
+        padding-left: 0px;
+    }
+    
+    .habilidade ul {
+        justify-items: left;  
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+    
+    footer {
+        justify-items: center;  
+        padding: 20px;
+    }
+
+}
+
+@media print {
+    html {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .body {
+        background-color: white;
+        color: black;
+    }
+
+    .nome {
+        padding-top: 25px;
+        padding-bottom: 90px;
+    }
+
+    .menu {
+        visibility: hidden;
+        position: static;
+        width: 100%;
+    }
+    
+    .about {
+        display: block;     
+    }
+
+    .foto {
+        width: 100%;
+        height: 10px;
+        visibility: hidden;
+    }
+
+    .certificado .div17 {
+        margin-top: 70px;
+    }
+
+    .certificado .div18 {
+        margin-top: 70px;
+    }
+
+    .certificado .div19 {
+        margin-top: 70px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        border: none;
+        border-radius: none;
+        color: white;
+    }
+
+    .menu_p {
+        display: block;
+    }
+
+    
+}
