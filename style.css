@@ -43,10 +43,10 @@ p {
 }
 
 .menu ul { 
+    /*border: 2px solid;*/
     display: flex;  
     list-style-type: none;
     justify-content: right;
-    /*border: 2px solid;*/
     padding: 6px;
 }
 
@@ -542,7 +542,7 @@ footer a:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 970px) {
 
     .nome {
         display: none;
@@ -643,6 +643,9 @@ footer a:hover {
     }
 
 }
+
+/*@media screen and (max-width: 900px)*/
+
 
 @media print {
     html {
